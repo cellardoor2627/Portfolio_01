@@ -1,0 +1,593 @@
+/*
+Zaloman.com Website by Martynas Zaloga
+ */
+ 
+@import "compass/css3";
+/* FONTS */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800);
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Roboto:900');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #f5f6f7;
+  color: #f5f6f7;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 300; }
+
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+  
+  /* =========================
+
+		GENERAL STYLES 
+
+   =========================*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none; }
+
+a:link,
+a:visited,
+a:active {
+  font-weight: 600;
+  color: #f5f6f7;
+  text-decoration: none; }
+  a:link:hover,
+  a:visited:hover,
+  a:active:hover {
+    color: #e1e1e1;
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s; }
+
+
+.nav {
+  position: fixed;
+  width: 30px;
+  height: 84px;
+  z-index: 100;
+  right: 0;
+  top: 50%;
+  margin-top: -42px; }
+  .nav a {
+    text-indent: -9999px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: rgba(245, 246, 247, 0.4);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -ms-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s; }
+    .nav a:hover {
+      background: #f5f6f7;
+      -webkit-transition: background 1s;
+      -moz-transition: background 1s;
+      -ms-transition: background 1s;
+      -o-transition: background 1s;
+      transition: background 1s; }
+
+.mb-7 {
+  margin-bottom: 70px; }
+  
+.centered {
+	text-align: center;
+}
+
+/* =========================
+
+		SECTION STYLES 
+
+   =========================*/
+#hero,
+#work,
+#networks {
+  position: relative; }
+
+.hero-block  {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+	  top: 45%;
+  margin-top: -195px; 
+}
+
+footer{
+		bottom: auto;
+}
+
+.footer-block {
+  height: 390px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -195px; }
+
+.hero-image {
+  width: auto;
+  height: auto;
+}
+
+.footer-block {
+  height: 180px;
+  margin-top: -90px; }
+
+#hero {
+  background-image: url(../../img/bg.jpg);
+background-repeat: no-repeat;
+background-position: 58.1990% center;
+	background-size: cover;
+	background-color: #06a4a4;
+}
+
+
+
+#networks {
+  background: #474e5d; }
+
+.down-arrow {
+  position: absolute;
+  bottom: 85%;
+  left: 50%;
+  margin-left: -12px;
+  width: 25px;
+  height: 55px;
+  background: url("../img/arrow.png") no-repeat; }
+
+/* =========================
+
+			WORK 
+
+   =========================*/
+
+#work .showcase {
+  width: 100%;
+  padding: 0px;
+  
+   }
+
+.showcase-tiles {
+  padding-top: 0px;
+  margin-top: 0px;
+  display: table-row; }
+
+.showcase-info {
+  display: table-row;
+}
+
+.showcase-info {
+  text-align: center;
+}
+
+
+/* =========================
+
+			FOOTER 
+
+   =========================*/
+#networks {
+	width: 100%;
+	height: 100%;
+	padding-top: 200px;
+}
+
+#networks i {
+	font-size: 60px;
+	color: white;
+	padding: 18px;
+}
+
+#networks .dribbble:hover {
+	color: #ed6297;
+}
+
+#networks .facebook:hover {
+	color: #3b5998;
+}
+
+#networks .twitter:hover {
+	color: #2094CA;
+}
+
+#networks .mail:hover {
+	color: #f39c12;
+}
+.bgbgggg {
+	
+		background-image: url(../../img/bbg.jpg);
+	background-repeat: repeat;
+	
+}
+.labas {
+	text-shadow: 1px 1px 5px black;
+
+ 	opacity: 0.9;
+	  font-family: Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter, Monaco, Courier New, monospace;
+	word-spacing: normal;
+  color: #f5f6f7;
+  font-size:32px;
+}
+/* font-size: 2vw; */
+.labas2 {
+  font-family: 'Open Sans', sans-serif;
+  color: #f5f6f7;
+	text-shadow: 2px 2px 1px black;
+	opacity: 0.8;
+			background-image: url(../../img/bbg.jpg);
+	background-repeat: repeat;
+	background-blend-mode: overlay;
+	font-size:22px;
+
+}
+
+.blablab {
+	text-shadow: 1px 1px 5px black;
+
+ 	opacity: 0.8;
+	  font-family: Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter, Monaco, Courier New, monospace;
+	word-spacing: normal;
+  color: #f5f6f7;
+  font-size:32px;
+
+}
+    .glitch {
+	font-family: Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter, Monaco, Courier New, monospace;
+	word-spacing: normal;
+		text-shadow: 1px 1px 5px black;
+      color: white;
+      font-size: 46px;
+      margin: 0 auto;
+      width: 16px;
+		opacity: 0.7;
+    }
+    
+    /* Real glitch effect */
+    .glitch {
+      position: relative;;
+    }
+    
+ .glitch:after {
+      animation: glitch-animation 2s infinite linear alternate-reverse;
+      background: white;
+      clip: rect( 0, 900px, 0, 0 );
+      color: white;
+      content: attr( data-text );
+      left: 2px;
+      overflow: hidden;
+      position: absolute;
+      text-shadow: -1px 0 red;
+      top: 0;
+    }
+    .glitch:before {
+      animation: glitch-animation-2 3s infinite linear alternate-reverse;
+      background: purple;
+      clip: rect( 0, 900px, 0, 0 );
+      color: white;
+      content: attr( data-text );
+      left: -2px;
+      overflow: hidden;
+      position: absolute;
+      text-shadow: 1px 0 blue;
+      top: 0;
+    }
+    /* Expanded Animations */
+    @keyframes glitch-animation {
+      0% {
+        clip: rect(42px, 9999px, 44px, 0);
+      }
+      5% {
+        clip: rect(12px, 9999px, 59px, 0);
+      }
+      10% {
+        clip: rect(48px, 9999px, 29px, 0);
+      }
+      15.0% {
+        clip: rect(42px, 9999px, 73px, 0);
+      }
+      20% {
+        clip: rect(63px, 9999px, 27px, 0);
+      }
+      25% {
+        clip: rect(34px, 9999px, 55px, 0);
+      }
+      30.0% {
+        clip: rect(86px, 9999px, 73px, 0);
+      }
+      35% {
+        clip: rect(20px, 9999px, 20px, 0);
+      }
+      40% {
+        clip: rect(26px, 9999px, 60px, 0);
+      }
+      45% {
+        clip: rect(25px, 9999px, 66px, 0);
+      }
+      50% {
+        clip: rect(57px, 9999px, 98px, 0);
+      }
+      55.0% {
+        clip: rect(5px, 9999px, 46px, 0);
+      }
+      60.0% {
+        clip: rect(82px, 9999px, 31px, 0);
+      }
+      65% {
+        clip: rect(54px, 9999px, 27px, 0);
+      }
+      70% {
+        clip: rect(28px, 9999px, 99px, 0);
+      }
+      75% {
+        clip: rect(45px, 9999px, 69px, 0);
+      }
+      80% {
+        clip: rect(23px, 9999px, 85px, 0);
+      }
+      85.0% {
+        clip: rect(54px, 9999px, 84px, 0);
+      }
+      90% {
+        clip: rect(45px, 9999px, 47px, 0);
+      }
+      95% {
+        clip: rect(37px, 9999px, 20px, 0);
+      }
+      100% {
+        clip: rect(4px, 9999px, 91px, 0);
+      }
+    }
+    @keyframes glitch-animation-2 {
+      0% {
+        clip: rect(65px, 9999px, 100px, 0);
+      }
+      5% {
+        clip: rect(52px, 9999px, 74px, 0);
+      }
+      10% {
+        clip: rect(79px, 9999px, 85px, 0);
+      }
+      15.0% {
+        clip: rect(75px, 9999px, 5px, 0);
+      }
+      20% {
+        clip: rect(67px, 9999px, 61px, 0);
+      }
+      25% {
+        clip: rect(14px, 9999px, 79px, 0);
+      }
+      30.0% {
+        clip: rect(1px, 9999px, 66px, 0);
+      }
+      35% {
+        clip: rect(86px, 9999px, 30px, 0);
+      }
+      40% {
+        clip: rect(23px, 9999px, 98px, 0);
+      }
+      45% {
+        clip: rect(85px, 9999px, 72px, 0);
+      }
+      50% {
+        clip: rect(71px, 9999px, 75px, 0);
+      }
+      55.0% {
+        clip: rect(2px, 9999px, 48px, 0);
+      }
+      60.0% {
+        clip: rect(30px, 9999px, 16px, 0);
+      }
+      65% {
+        clip: rect(59px, 9999px, 50px, 0);
+      }
+      70% {
+        clip: rect(41px, 9999px, 62px, 0);
+      }
+      75% {
+        clip: rect(2px, 9999px, 82px, 0);
+      }
+      80% {
+        clip: rect(47px, 9999px, 73px, 0);
+      }
+      85.0% {
+        clip: rect(3px, 9999px, 27px, 0);
+      }
+      90% {
+        clip: rect(26px, 9999px, 55px, 0);
+      }
+      95% {
+        clip: rect(42px, 9999px, 97px, 0);
+      }
+      100% {
+        clip: rect(38px, 9999px, 49px, 0);
+      }
+    }
+.h1kdg {
+	background-color: black;
+	height: 16px;
+	width: 16px;
+	
+}
+/* Work page2 */
+.Selfie {
+	margin-top: auto;
+    height:500px;
+    width:281px;
+	border-radius:15px;
+	border-color: aliceblue;
+	border-style: double;
+    background-image:
+		url('../../idoubtthatsameonewillreadthis20180613/Selfie.gif');
+    
+}
+
+.Selfie:hover {
+    background-image: url('../../idoubtthatsameonewillreadthis20180613/Selfie.jpg');
+}
+
+.textbg {
+    background-image: url(' ../../page2/TEXTBG.jpg');
+	opacity: 0.22;
+	background-repeat:round; 
+}
+.glitch-work {
+	font-family: Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter, Monaco, Courier New, monospace;
+	word-spacing: normal;
+		text-shadow: 1px 1px 5px black;
+      color: white;
+      font-size: 46px;
+      margin: 0 auto;
+      width: 16px;
+		opacity: 0.7;
+    }
+    
+    /* Real glitch effect */
+    .glitch-work {
+      position: relative;;
+    }
+    
+ .glitch-work:after {
+      animation: glitch-animation 2s infinite linear alternate-reverse;
+      background: black;
+      clip: rect( 0, 900px, 0, 0 );
+      color: white;
+      content: attr( data-text );
+      left: 2px;
+      overflow: hidden;
+      position: absolute;
+      text-shadow: -1px 0 red;
+      top: 0;
+    }
+    .glitch-work:before {
+      animation: glitch-animation-2 3s infinite linear alternate-reverse;
+      background: black;
+      clip: rect( 0, 900px, 0, 0 );
+      color: white;
+      content: attr( data-text );
+      left: -2px;
+      overflow: hidden;
+      position: absolute;
+      text-shadow: 1px 0 blue;
+      top: 0;
+    }
+
+h5 {
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 2rem;
+	text-align: left;
+	margin-top: auto;
+	color: darkturquoise;
+text-shadow: 1px 1px 7px black;
+	
+	opacity: 0.79;
+	
+		   
+}
+h6 {
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 30px;
+	color: mediumpurple;
+	   -webkit-text-stroke: 1px black;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+	
+	margin-top: auto;
+	opacity: 0.88;
+	
+	
+}
+h7 {
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 30px;
+	color: mediumpurple;
+
+	margin-top: auto;
+	opacity: 0.88;
+	
+	
+}
+.createmorespace {
+	margin-left: 33px;
+	text-align: center;
+ font-family: 'Alfa Slab One', cursive;
+	font-size: 3em;
+	
+		   -webkit-text-stroke: 1px black;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+	
+	opacity: 0.45;
+	
+	
+}
+
+  /* =========================
+
+		PAGE DU 2
+
+   =========================*/
+
+#page2 {
+	
+margin-top: 0px;
+background: #81ecec; 
+background-repeat: repeat-x;
+background-image: url(../../page2/re.png);
+
+ width: 100%;
+  padding: 0px;	
+position: relative; }	
+	
+
+  /* =========================
+
+		PAGE Treceteretet 3
+
+   =========================*/
+
+#page3 {
+	
+margin-top: 0px;
+background: #07a4a4; 
+background-repeat: no-repeat;
+background-size: cover;
+ width: 100%;
+  padding: 0px;	
+position: relative; }	
+	
